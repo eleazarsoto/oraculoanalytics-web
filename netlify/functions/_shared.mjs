@@ -74,7 +74,7 @@ Reglas:
  "primer_paso": "una acción sencilla para esta semana",
  "servicio": "uno de: Diagnóstico de Datos en 7 Días | Sitios web y canales conectados | Marketing digital medible | Análisis y limpieza de datos | Reportes automáticos y dashboards | Capacitación para equipos",
  "por_que_servicio": "una frase"}
-Exactamente 3 elementos en "preguntas".`;
+Exactamente 3 elementos en "preguntas". Cada texto en una sola frase corta (máximo 25 palabras). No uses comillas dentro de los textos.`;
 
 const ALLOWED = [/^https:\/\/(www\.)?oraculoanalytics\.com$/, /^https:\/\/[a-z0-9-]+(--[a-z0-9-]+)?\.netlify\.app$/, /^http:\/\/localhost(:\d+)?$/];
 const hits = new Map(); // límite de uso básico por IP (en memoria, por instancia)
@@ -100,13 +100,13 @@ export function apiKey() {
   return (globalThis.Netlify?.env?.get?.("ANTHROPIC_API_KEY")) || process.env.ANTHROPIC_API_KEY;
 }
 
-export async function callClaude({ system, messages, max_tokens = 500, fetchImpl = fetch }) {
+export async function callClaude({ system, messages, max_tokens = 500, extra = {}, fetchImpl = fetch }) {
   const key = apiKey();
   if (!key) throw Object.assign(new Error("Falta ANTHROPIC_API_KEY"), { code: "nokey" });
   const r = await fetchImpl("https://api.anthropic.com/v1/messages", {
     method: "POST",
     headers: { "x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json" },
-    body: JSON.stringify({ model: MODEL, max_tokens, system, messages }),
+    body: JSON.stringify({ model: MODEL, max_tokens, system, messages, ...extra }),
   });
   const data = await r.json().catch(() => ({}));
   if (!r.ok) throw Object.assign(new Error(data?.error?.message || `HTTP ${r.status}`), { code: "api", status: r.status });
