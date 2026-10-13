@@ -74,7 +74,7 @@ Reglas:
  "primer_paso": "una acción sencilla para esta semana",
  "servicio": "uno de: Diagnóstico de Datos en 7 Días | Sitios web y canales conectados | Marketing digital medible | Análisis y limpieza de datos | Reportes automáticos y dashboards | Capacitación para equipos",
  "por_que_servicio": "una frase"}
-Exactamente 3 elementos en "preguntas". Cada texto en una sola frase corta (máximo 25 palabras). No uses comillas dentro de los textos.`;
+Exactamente 3 elementos en "preguntas". Cada texto en una sola frase corta (máximo 25 palabras). No uses comillas dentro de los textos. En español dirígete siempre al visitante de "usted" (su negocio, le permite, puede), nunca de tú.`;
 
 const ALLOWED = [/^https:\/\/(www\.)?oraculoanalytics\.com$/, /^https:\/\/[a-z0-9-]+(--[a-z0-9-]+)?\.netlify\.app$/, /^http:\/\/localhost(:\d+)?$/];
 const hits = new Map(); // límite de uso básico por IP (en memoria, por instancia)
