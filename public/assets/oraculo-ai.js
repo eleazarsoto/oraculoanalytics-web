@@ -1,5 +1,5 @@
 /* Oráculo Analytics · asistente de chat y mini diagnóstico con IA
-   Las llamadas van a /api/chat y /api/diagnostico (funciones de Netlify).
+   Las llamadas van a /api/chat y /api/diagnostico (funciones de Cloudflare Pages).
    La clave de API nunca está en el navegador. */
 (function () {
   var EN = (document.documentElement.lang || 'es').slice(0, 2) === 'en';

@@ -1,17 +1,18 @@
-# Oráculo Analytics · sitio con IA
+# Oráculo Analytics · sitio con IA (Cloudflare Pages)
 
 ## Estructura
-- `public/` → el sitio (español en la raíz, inglés en `en/`, páginas de gracias, `assets/`).
-- `netlify/functions/` → el asistente (`/api/chat`) y el mini diagnóstico (`/api/diagnostico`).
-- `netlify.toml` → le dice a Netlify qué publicar.
+- `public/` → el sitio (español en la raíz, inglés en `en/`, páginas de gracias, `assets/`, `social/`).
+- `functions/api/` → asistente (`/api/chat`), mini diagnóstico (`/api/diagnostico`) y formulario de contacto (`/api/contacto`).
+- `lib/oraculo.js` → textos y reglas compartidas de la IA (base de conocimiento, número de WhatsApp).
+- `public/_headers` → caché de `assets/`.
+- `netlify/` y `netlify.toml` → ya no se usan; se pueden borrar.
 
-## Publicarlo (las funciones de IA NO funcionan arrastrando la carpeta)
-1. Crea un repositorio nuevo en GitHub (por ejemplo `oraculoanalytics-web`) y sube TODO el contenido de esta carpeta.
-2. En Netlify, entra a tu proyecto → Project configuration → Build & deploy → Link repository, y elige ese repositorio.
-3. Deja vacío el build command. Netlify lee `netlify.toml` solo.
-4. En console.anthropic.com crea una clave de API y pon un límite de gasto mensual (por ejemplo USD 10).
-5. En Netlify → Project configuration → Environment variables, agrega `ANTHROPIC_API_KEY` con tu clave.
-6. Vuelve a publicar (Deploys → Trigger deploy).
+## Configuración en Cloudflare Pages
+- Build command: vacío · Build output directory: `public`
+- Variables (Settings → Variables and Secrets):
+  - `ANTHROPIC_API_KEY` (tipo Secret) → clave de console.anthropic.com
+  - `LEADS_WEBHOOK_URL` → Production URL del webhook de n8n "Leads del sitio · Oráculo"
+- Después de cambiar variables: Deployments → Retry deployment.
 
 ## Cambiar el número de WhatsApp
-Busca `523319780196` en `public/` y en `netlify/functions/_shared.mjs` y reemplázalo.
+Busca `523319780196` en `public/`, `functions/` y `33 1978 0196` en `lib/oraculo.js` y reemplázalo.
