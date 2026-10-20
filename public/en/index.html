@@ -298,6 +298,25 @@ footer a{color:var(--ink-soft);}
 <!-- Meta Pixel Code -->
 <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','5728519930705872');fbq('track','PageView');</script>
 <!-- End Meta Pixel Code -->
+<style>
+.chk{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:36px;}
+.chk label{display:flex;gap:14px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);padding:18px 20px;font:400 15.5px/1.5 var(--sans);color:var(--ink);cursor:pointer;transition:border-color .2s,background .2s;}
+.chk input{appearance:none;-webkit-appearance:none;flex:none;width:20px;height:20px;border:1.5px solid var(--teal-soft);border-radius:3px;margin:2px 0 0;display:grid;place-content:center;cursor:pointer;background:var(--paper);}
+.chk input:checked{background:var(--teal-mid);border-color:var(--teal-mid);}
+.chk input:checked::after{content:"";width:6px;height:11px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg) translate(-1px,-1px);}
+.chk input:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
+.chk label:has(input:checked){border-color:var(--teal-mid);background:var(--teal-pale);}
+.chk-out{margin-top:28px;padding:28px 30px;background:var(--teal-deep);color:var(--parchment);display:grid;gap:10px;}
+.chk-out[hidden]{display:none;}
+.chk-out p{margin:0;}
+.chk-score{font:400 15px var(--sans);color:var(--teal-pale);}
+.chk-score b{font:500 44px/1 var(--serif);color:var(--gold);margin-right:6px;}
+.chk-msg{font:400 21px/1.4 var(--serif);color:var(--parchment);max-width:680px;}
+.chk-rec{font:400 15px/1.5 var(--sans);color:var(--teal-pale);}
+.chk-rec b{color:#fff;font-weight:600;}
+.chk-out .btn{margin-top:10px;justify-self:start;}
+@media (max-width:760px){.chk{grid-template-columns:1fr;}}
+</style>
 </head>
 <body>
 <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=5728519930705872&ev=PageView&noscript=1"></noscript>
@@ -325,9 +344,9 @@ footer a{color:var(--ink-soft);}
   <canvas class="hero-canvas" aria-hidden="true"></canvas>
   <div class="wrap">
     <div>
-      <p class="eyebrow">Data analytics and measurable digital marketing</p>
+      <p class="eyebrow">Websites, automation, data, and measurable marketing</p>
       <h1>Your data already exists. It's time to turn it into <span class="hl">decisions.<svg viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M2 7 C 25 2, 55 2, 98 5"/></svg></span></h1>
-      <p class="lead">I help you know <strong>which channel brings you customers, what is costing you money, and what to do this week</strong>. For businesses at Lakeside, in Guadalajara, and online, with no jargon.</p>
+      <p class="lead">I build the complete system for your business: <strong>a connected website and social media, tasks that run on their own, and a report that tells you which channel brings customers and what to do this week</strong>. For businesses at Lakeside, in Guadalajara, and online, with no jargon.</p>
       <div class="btns">
         <a class="btn btn-gold" href="#contact">Book a free call <span class="arrow" aria-hidden="true">→</span></a>
         <a class="btn-link" href="#finding">See a sample finding</a>
@@ -339,14 +358,24 @@ footer a{color:var(--ink-soft);}
   <span class="scroll-cue" aria-hidden="true"></span>
 </section>
 
-<div class="marquee" aria-hidden="true"><div class="mq-track"><span>Retail</span><span>Tourism</span><span>Restaurants & cafés</span><span>Professional services</span><span>Hospitality</span><span>Health & wellness</span><span>Education</span><span>Events</span><span>Retail</span><span>Tourism</span><span>Restaurants & cafés</span><span>Professional services</span><span>Hospitality</span><span>Health & wellness</span><span>Education</span><span>Events</span></div><div class="mq-track rev"><span>SQL</span><span>Python</span><span>BigQuery</span><span>Looker Studio</span><span>Power BI</span><span>WhatsApp Business</span><span>Google Business Profile</span><span>Artificial intelligence</span><span>Automated reports</span><span>SQL</span><span>Python</span><span>BigQuery</span><span>Looker Studio</span><span>Power BI</span><span>WhatsApp Business</span><span>Google Business Profile</span><span>Artificial intelligence</span><span>Automated reports</span></div></div>
+<div class="marquee" aria-hidden="true"><div class="mq-track"><span>Retail</span><span>Tourism</span><span>Restaurants & cafés</span><span>Professional services</span><span>Hospitality</span><span>Health & wellness</span><span>Education</span><span>Events</span><span>Retail</span><span>Tourism</span><span>Restaurants & cafés</span><span>Professional services</span><span>Hospitality</span><span>Health & wellness</span><span>Education</span><span>Events</span></div><div class="mq-track rev"><span>Websites</span><span>Automation</span><span>AI chat</span><span>WhatsApp Business</span><span>Google Business Profile</span><span>Social media on autopilot</span><span>Measurable campaigns</span><span>Databases</span><span>Automated reports</span><span>Brand design</span><span>Websites</span><span>Automation</span><span>AI chat</span><span>WhatsApp Business</span><span>Google Business Profile</span><span>Social media on autopilot</span><span>Measurable campaigns</span><span>Databases</span><span>Automated reports</span><span>Brand design</span></div></div>
 
 <section class="section" id="problem">
   <div class="wrap">
     <p class="label">Sound familiar?</p>
     <h2>What many business owners say.</h2>
-    <ul class="pains"><li>I post on social media every day, but I don't know if it brings me customers.</li><li>My sales are in Excel, in a notebook, and in WhatsApp. Never in the same place.</li><li>I know some months are bad, but I don't know why.</li><li>I answer messages all day and still feel like customers slip away.</li></ul>
-    <div class="turn"><p>You don't lack data. <em>You lack a system that turns it into answers.</em></p></div>
+    <ul class="pains"><li>I post on social media every day, but I don't know if it brings me customers.</li><li>I answer messages all day and still feel like customers slip away.</li><li>My sales are in Excel, in a notebook, and in WhatsApp. Never in the same place.</li><li>I spend hours doing by hand things that repeat every week.</li><li>I pay for ads and don't know if they work.</li><li>I know some months are bad, but I don't know why.</li></ul>
+    <div class="turn"><p>You don't lack drive or data. <em>You lack a system that works for you.</em></p></div>
+  </div>
+</section>
+
+<section class="section" id="self-check">
+  <div class="wrap">
+    <p class="label">1-minute self-check</p>
+    <h2>How much is not having a system costing you?</h2>
+    <p class="sub">Check what happens to you today. Each item is a customer, an hour, or money slipping away without you noticing.</p>
+    <div class="chk" id="chk"><label><input type="checkbox" data-s="presencia"><span>People look for me on Google or social media and can't find me, or find outdated info.</span></label><label><input type="checkbox" data-s="presencia"><span>I don't know which channel each customer comes from.</span></label><label><input type="checkbox" data-s="auto"><span>I answer the same messages and questions every day.</span></label><label><input type="checkbox" data-s="auto"><span>I spend hours posting on social media or moving data from one place to another.</span></label><label><input type="checkbox" data-s="datos"><span>My sales and expenses are in notebooks, Excel, and WhatsApp, never in one place.</span></label><label><input type="checkbox" data-s="datos"><span>I don't know which product or service makes me the most money.</span></label><label><input type="checkbox" data-s="mkt"><span>I pay for ads or promotions without knowing if they bring customers.</span></label><label><input type="checkbox" data-s="diseno"><span>My social media image doesn't look as professional as my work.</span></label></div>
+    <div class="chk-out" id="chk-out" aria-live="polite" hidden><p class="chk-score"><b id="chk-n">0</b>of 8</p><p class="chk-msg" id="chk-msg"></p><p class="chk-rec">Where to start: <b id="chk-svc"></b></p><a class="btn btn-gold" id="chk-cta" href="#contacto">I want to fix it: free conversation <span class="arrow" aria-hidden="true">→</span></a></div>
   </div>
 </section>
 
@@ -354,10 +383,10 @@ footer a{color:var(--ink-soft);}
   <div class="wrap">
     <p class="label">The solution</p>
     <h2>A complete ecosystem: from capture to decision.</h2>
-    <p class="sub">Most businesses have a half-finished website or social media, and nobody measures what works. I connect all three parts so every lead becomes useful information.</p>
+    <p class="sub">Most businesses have a half-finished website or social media, tasks done by hand, and nobody measuring what works. I connect everything so every lead becomes useful information and every repetitive task runs on its own.</p>
     <div class="layers">
       <div class="layer"><svg class="ico" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 10h24l-9 11v8l-6 3v-11z"/><circle cx="31" cy="7" r="1.5" fill="currentColor"/><circle cx="9" cy="5" r="1.5" fill="currentColor"/><circle cx="20" cy="4" r="1.5" fill="currentColor"/></g></svg><h3>Capture</h3><p class="q">Where do your customers come from?</p><p>Website, WhatsApp Business, Google profile, and social media, with tracking to know where every lead comes from.</p></div>
-      <div class="layer"><svg class="ico" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="20" cy="10" rx="11" ry="4"/><path d="M9 10v20c0 2.2 4.9 4 11 4s11-1.8 11-4V10"/><path d="M9 20c0 2.2 4.9 4 11 4s11-1.8 11-4"/></g></svg><h3>Organization</h3><p class="q">Where is it recorded?</p><p>Everything lands in one database: who came, through which channel, when, and whether they bought. No copy-paste.</p></div>
+      <div class="layer"><svg class="ico" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="20" cy="10" rx="11" ry="4"/><path d="M9 10v20c0 2.2 4.9 4 11 4s11-1.8 11-4V10"/><path d="M9 20c0 2.2 4.9 4 11 4s11-1.8 11-4"/></g></svg><h3>Organization</h3><p class="q">Where is it recorded?</p><p>Everything lands in one database: who came, through which channel, when, and whether they bought. No copy-paste, and repetitive tasks run on their own.</p></div>
       <div class="layer"><svg class="ico" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="20" cy="20" r="13"/><path d="M25 15l-3 7-7 3 3-7z"/><circle cx="20" cy="20" r="1.2" fill="currentColor"/></g></svg><h3>Decision</h3><p class="q">What do I do this week?</p><p>A weekly report showing which channel brings customers, what they cost, and what to do, in business language.</p></div>
     </div>
   </div>
@@ -576,6 +605,18 @@ footer a{color:var(--ink-soft);}
   var q=new URLSearchParams(location.search);
   ['utm_source','utm_medium','utm_campaign'].forEach(function(k){var v=q.get(k);try{if(v){sessionStorage.setItem(k,v);}else{v=sessionStorage.getItem(k);}}catch(e){}var el=document.getElementById(k);if(el&&v){el.value=v;}});
 })();
+</script>
+<script>
+(function(){var box=document.getElementById('chk');if(!box)return;var EN=document.documentElement.lang==='en';
+var NAMES=EN?{presencia:'Websites and connected channels',auto:'Task automation',datos:'Databases and automated reports',mkt:'Measurable digital marketing',diseno:'Brand and social media design'}:{presencia:'Sitios web y canales conectados',auto:'Automatización de tareas',datos:'Bases de datos y reportes automáticos',mkt:'Marketing digital medible',diseno:'Diseño de marca y redes'};
+var MSG=EN?['Your business is on the right track. A diagnostic can still uncover opportunities you can\'t see yet.','There are a few leaks, and they can be fixed quickly.','Your business is losing customers and hours every week on several fronts.','Almost everything depends on you and your memory. A system would give you back time and control from the first month.']:['Su negocio va bien encaminado. Aun así, un diagnóstico puede encontrar oportunidades que hoy no se ven.','Hay algunas fugas, y se pueden cerrar rápido.','Su negocio está perdiendo clientes y horas cada semana en varios frentes.','Casi todo depende de usted y de su memoria. Un sistema le devolvería tiempo y control desde el primer mes.'];
+var ORDER=['presencia','auto','datos','mkt','diseno'];var out=document.getElementById('chk-out');
+function upd(){var c={},n=0;box.querySelectorAll('input').forEach(function(i){if(i.checked){n++;c[i.dataset.s]=(c[i.dataset.s]||0)+1;}});out.hidden=false;
+document.getElementById('chk-n').textContent=n;document.getElementById('chk-msg').textContent=MSG[n===0?0:n<=2?1:n<=5?2:3];
+var best=null;ORDER.forEach(function(k){if((c[k]||0)>(best?c[best]:0))best=k;});var rec=best?NAMES[best]:(EN?'Data Diagnostic in 7 Days':'Diagnóstico de Datos en 7 Días');
+if(best&&n>=4)rec+=(EN?', starting with the Data Diagnostic in 7 Days':', empezando por el Diagnóstico de Datos en 7 Días');document.getElementById('chk-svc').textContent=rec;out.dataset.n=n;out.dataset.s=best||'diagnostico';}
+box.addEventListener('change',upd);
+document.getElementById('chk-cta').addEventListener('click',function(){if(typeof gtag==='function')gtag('event','autodiagnostico_cta',{puntos:Number(out.dataset.n||0),servicio:out.dataset.s||'',idioma:EN?'en':'es'});if(typeof fbq==='function')fbq('trackCustom','Autodiagnostico');});})();
 </script>
 </body>
 </html>
