@@ -77,9 +77,9 @@
     '<div class="rep-grid">' +
     '<label>' + T.nombre + '<input name="nombre" autocomplete="name" required maxlength="80"></label>' +
     '<label>' + T.negocio + '<input name="negocio" autocomplete="organization" required maxlength="100"></label>' +
-    '<label>' + T.giro + '<select name="giro" required><option value=""></option>' + T.giros.map(function (g) { return '<option value="' + g[0] + '"' + (g[0] === preGiro ? ' selected' : '') + '>' + esc(g[1]) + '</option>'; }).join('') + '</select></label>' +
     '<label>' + T.correo + '<input name="correo" type="email" autocomplete="email" required maxlength="120"></label>' +
     '<label>' + T.wa + '<input name="whatsapp" type="tel" autocomplete="tel" maxlength="30"></label>' +
+    '<label class="rep-wide">' + T.giro + '<select name="giro" required><option value=""></option>' + T.giros.map(function (g) { return '<option value="' + g[0] + '"' + (g[0] === preGiro ? ' selected' : '') + '>' + esc(g[1]) + '</option>'; }).join('') + '</select></label>' +
     '</div>' +
     '<fieldset class="rep-ota" hidden><label class="rep-wide">' + T.otaQ + '<select name="ota"><option value=""></option>' + T.otaOpts.map(function (o, i) { return '<option value="' + i + '">' + esc(o) + '</option>'; }).join('') + '</select></label>' +
     '<label>' + T.resQ + '<input name="reservas" type="number" min="0" max="100000" inputmode="numeric"></label>' +
