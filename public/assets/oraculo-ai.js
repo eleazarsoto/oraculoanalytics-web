@@ -3,7 +3,7 @@
    La clave de API nunca está en el navegador. */
 (function () {
   var EN = (document.documentElement.lang || 'es').slice(0, 2) === 'en';
-  var WA = 'https://wa.me/523319780196?text=' + encodeURIComponent(EN ? "Hi Eleazar, I chatted with your assistant and I'm interested in a free call." : 'Hola Eleazar, hablé con su asistente y me interesa una conversación gratuita.');
+  var WA = 'https://wa.me/523320267301?text=' + encodeURIComponent(EN ? "Hi Eleazar, I chatted with your assistant and I'm interested in a free call." : 'Hola Eleazar, hablé con su asistente y me interesa una conversación gratuita.');
   var CONTACT = EN ? '#contact' : '#contacto';
   var T = EN ? {
     launch: 'Ask Oráculo', title: 'Oráculo assistant', status: 'AI · replies instantly', close: 'Close chat',

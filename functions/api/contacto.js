@@ -11,7 +11,7 @@ function fallo(en) {
     : ["No pudimos enviar su mensaje", "Intente de nuevo en un minuto o escríbame directamente por WhatsApp.", "Escribir por WhatsApp", "Volver"];
   const html = `<!doctype html><html lang="${en ? "en" : "es"}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${t[0]}</title>
 <style>body{font-family:system-ui,sans-serif;background:#F4EFE6;color:#16343A;display:grid;place-items:center;min-height:100vh;margin:0;padding:16px}main{max-width:440px;text-align:center}a{display:inline-block;margin:8px;padding:12px 18px;border-radius:999px;background:#16343A;color:#fff;text-decoration:none}a.s{background:transparent;color:#16343A;border:1px solid #16343A}</style></head>
-<body><main><h1>${t[0]}</h1><p>${t[1]}</p><a href="https://wa.me/523319780196">${t[2]}</a><a class="s" href="${en ? "/en/" : "/"}#contacto">${t[3]}</a></main></body></html>`;
+<body><main><h1>${t[0]}</h1><p>${t[1]}</p><a href="https://wa.me/523320267301">${t[2]}</a><a class="s" href="${en ? "/en/" : "/"}#contacto">${t[3]}</a></main></body></html>`;
   return new Response(html, { status: 502, headers: { "content-type": "text/html; charset=utf-8" } });
 }
 

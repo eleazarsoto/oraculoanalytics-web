@@ -1,5 +1,5 @@
 // Autodiagnóstico v2 de Oráculo Analytics.
-// Calcula el puntaje al marcar casillas y, al final, ofrece enviar un reporte en PDF por correo.
+// Calcula el puntaje al marcar casillas y, al final, ofrece enviar un reporte por correo.
 // El formulario se envía a /api/reporte, que lo reenvía a n8n (variable REPORTE_WEBHOOK_URL).
 (function () {
   var box = document.getElementById('chk');
@@ -11,7 +11,7 @@
     names: { presencia: 'Websites and connected channels', auto: 'Task automation', datos: 'Databases and automated reports', mkt: 'Measurable digital marketing', diseno: 'Brand and social media design' },
     msg: ['Your business is on the right track. A diagnostic can still uncover opportunities you can\'t see yet.', 'There are a few leaks, and they can be fixed quickly.', 'Your business is losing customers and hours every week on several fronts.', 'Almost everything depends on you and your memory. A system would give you back time and control from the first month.'],
     diag: 'Data Diagnostic in 7 Days', diagThen: ', starting with the Data Diagnostic in 7 Days',
-    title: 'Get your report as a PDF', lead: 'Your three main leaks and what to do about each one, written for your type of business. It arrives in your inbox in a few minutes.',
+    title: 'Get your report by email', lead: 'Your three main leaks and what to do about each one, written for your type of business. It arrives in your inbox in a few minutes.',
     nombre: 'Your name', negocio: 'Business name', giro: 'Type of business', correo: 'Email', wa: 'WhatsApp (optional)',
     giros: [['turismo', 'Tourism, lodging or experiences'], ['restaurante', 'Restaurant or café'], ['salud', 'Health, wellness or beauty'], ['comercio', 'Retail or shop'], ['servicios', 'Professional services'], ['otro', 'Other']],
     otaQ: 'What share of your bookings comes through Booking, Airbnb or Expedia?', otaOpts: ['Less than 25%', '25% to 50%', '50% to 75%', 'More than 75%'],
@@ -26,7 +26,7 @@
     names: { presencia: 'Sitios web y canales conectados', auto: 'Automatización de tareas', datos: 'Bases de datos y reportes automáticos', mkt: 'Marketing digital medible', diseno: 'Diseño de marca y redes' },
     msg: ['Su negocio va bien encaminado. Aun así, un diagnóstico puede encontrar oportunidades que hoy no se ven.', 'Hay algunas fugas, y se pueden cerrar rápido.', 'Su negocio está perdiendo clientes y horas cada semana en varios frentes.', 'Casi todo depende de usted y de su memoria. Un sistema le devolvería tiempo y control desde el primer mes.'],
     diag: 'Diagnóstico de Datos en 7 Días', diagThen: ', empezando por el Diagnóstico de Datos en 7 Días',
-    title: 'Reciba su reporte en PDF', lead: 'Sus 3 fugas principales y qué hacer con cada una, escrito para su tipo de negocio. Le llega a su correo en unos minutos.',
+    title: 'Reciba su reporte por correo', lead: 'Sus 3 fugas principales y qué hacer con cada una, escrito para su tipo de negocio. Le llega a su correo en unos minutos.',
     nombre: 'Su nombre', negocio: 'Nombre del negocio', giro: 'Giro', correo: 'Correo', wa: 'WhatsApp (opcional)',
     giros: [['turismo', 'Turismo, hospedaje o experiencias'], ['restaurante', 'Restaurante o café'], ['salud', 'Salud, bienestar o belleza'], ['comercio', 'Comercio o tienda'], ['servicios', 'Servicios profesionales'], ['otro', 'Otro']],
     otaQ: '¿Qué parte de sus reservas llega por Booking, Airbnb o Expedia?', otaOpts: ['Menos de 25%', 'De 25% a 50%', 'De 50% a 75%', 'Más de 75%'],
