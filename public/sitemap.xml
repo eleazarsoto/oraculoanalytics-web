@@ -12,4 +12,28 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://oraculoanalytics.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://oraculoanalytics.com/en/"/>
   </url>
+  <url>
+    <loc>https://oraculoanalytics.com/ribera/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oraculoanalytics.com/ribera/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oraculoanalytics.com/en/lake-chapala/"/>
+  </url>
+  <url>
+    <loc>https://oraculoanalytics.com/en/lake-chapala/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oraculoanalytics.com/ribera/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oraculoanalytics.com/en/lake-chapala/"/>
+  </url>
+  <url>
+    <loc>https://oraculoanalytics.com/aviso-de-privacidad/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oraculoanalytics.com/aviso-de-privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oraculoanalytics.com/en/privacy/"/>
+  </url>
+  <url>
+    <loc>https://oraculoanalytics.com/en/privacy/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oraculoanalytics.com/aviso-de-privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oraculoanalytics.com/en/privacy/"/>
+  </url>
 </urlset>

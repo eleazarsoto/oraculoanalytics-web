@@ -210,3 +210,25 @@
   .mq-track{animation:none;}
   .fc{animation:none;}
 }
+
+/* Autodiagnóstico v2: formulario del reporte en PDF */
+.rep{margin-top:18px;padding-top:22px;border-top:1px solid rgba(220,232,228,.18);display:grid;gap:14px;}
+.rep-title{font:400 22px/1.3 var(--serif);color:var(--gold);margin:0;}
+.rep-lead{font:400 15px/1.55 var(--sans);color:var(--teal-pale);margin:0;max-width:640px;}
+.rep-grid,.rep-ota{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 16px;border:0;padding:0;margin:0;min-width:0;}
+.rep-ota[hidden],.rep-grid[hidden],.rep-consent[hidden],.rep .btn[hidden]{display:none;}
+.rep label{display:grid;gap:6px;font:600 13px var(--sans);color:var(--teal-pale);}
+.rep .rep-wide{grid-column:1/-1;}
+.rep input:not([type=checkbox]),.rep select{font:400 15px var(--sans);color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:11px 12px;width:100%;box-sizing:border-box;}
+.rep input:focus-visible,.rep select:focus-visible{outline:2px solid var(--gold);outline-offset:1px;}
+.rep-est{grid-column:1/-1;margin:0;font:600 15px/1.5 var(--sans);color:#fff;}
+.rep-est:empty{display:none;}
+.rep-consent{display:flex !important;grid-template-columns:none;gap:10px;align-items:flex-start;font:400 14px/1.5 var(--sans) !important;color:var(--teal-pale);}
+.rep-consent input{margin-top:3px;accent-color:var(--gold);}
+.rep-consent a{color:var(--gold);}
+.rep-hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0;}
+.rep .btn{justify-self:start;margin-top:4px;}
+.rep .btn:disabled{opacity:.6;cursor:wait;}
+.rep-status{margin:0;font:400 15px/1.55 var(--sans);color:#fff;max-width:640px;}
+.rep-status:empty{display:none;}
+@media (max-width:760px){.rep-grid,.rep-ota{grid-template-columns:1fr;}}
