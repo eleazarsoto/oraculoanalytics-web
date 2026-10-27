@@ -7,8 +7,8 @@
   var CONTACT = EN ? '#contact' : '#contacto';
   var T = EN ? {
     launch: 'Ask Oráculo', title: 'Oráculo assistant', status: 'AI · replies instantly', close: 'Close chat',
-    hello: "Hi! I'm Oráculo Analytics' virtual assistant. Ask me anything about the services, how the 7-Day Data Diagnostic works, prices or team training.",
-    chips: ['How does the diagnostic work?', 'How much does it cost?', 'What data do I need?', 'Do you train teams?'],
+    hello: "Hi! I'm Oráculo Analytics' virtual assistant. Ask me anything about websites, automations, prices, the free online presence review or team training.",
+    chips: ['How much does a website cost?', 'What is the free review?', 'What can you automate?', 'Do you train teams?'],
     ph: 'Type your question…', send: 'Send', note: 'AI assistant. It can make mistakes; confirm details with Eleazar.',
     book: 'Book a free call', wa: 'WhatsApp', err: "I couldn't connect right now. You can write to Eleazar directly and he'll reply within 24 hours.",
     rate: "You've sent many messages in a short time. Please wait a few minutes, or write to Eleazar directly.",
@@ -19,8 +19,8 @@
     prefill: 'My mini diagnostic said:', ctxChat: 'I just got my mini diagnostic: '
   } : {
     launch: 'Pregúntele a Oráculo', title: 'Asistente Oráculo', status: 'IA · responde al instante', close: 'Cerrar chat',
-    hello: '¡Hola! Soy el asistente virtual de Oráculo Analytics. Pregúnteme lo que quiera sobre los servicios, cómo funciona el Diagnóstico de Datos en 7 Días, precios o capacitación para su equipo.',
-    chips: ['¿Cómo funciona el diagnóstico?', '¿Cuánto cuesta?', '¿Qué datos necesito?', '¿Capacitan a mi equipo?'],
+    hello: '¡Hola! Soy el asistente virtual de Oráculo Analytics. Pregúnteme lo que quiera sobre sitios web, automatizaciones, precios, la revisión gratis de su presencia en línea o capacitación para su equipo.',
+    chips: ['¿Cuánto cuesta un sitio?', '¿Qué es la revisión gratis?', '¿Qué pueden automatizar?', '¿Capacitan a mi equipo?'],
     ph: 'Escriba su pregunta…', send: 'Enviar', note: 'Asistente con IA. Puede equivocarse; confirme los detalles con Eleazar.',
     book: 'Agendar conversación gratis', wa: 'WhatsApp', err: 'No pude conectarme en este momento. Puede escribirle directo a Eleazar y le responde en menos de 24 horas.',
     rate: 'Ha enviado muchos mensajes en poco tiempo. Espere unos minutos o escríbale directo a Eleazar.',

@@ -9,8 +9,8 @@
   var PRIV = EN ? '/en/privacy/' : '/aviso-de-privacidad/';
   var T = EN ? {
     names: { presencia: 'Websites and connected channels', auto: 'Task automation', datos: 'Databases and automated reports', mkt: 'Measurable digital marketing', diseno: 'Brand and social media design' },
-    msg: ['Your business is on the right track. A diagnostic can still uncover opportunities you can\'t see yet.', 'There are a few leaks, and they can be fixed quickly.', 'Your business is losing customers and hours every week on several fronts.', 'Almost everything depends on you and your memory. A system would give you back time and control from the first month.'],
-    diag: 'Data Diagnostic in 7 Days', diagThen: ', starting with the Data Diagnostic in 7 Days',
+    msg: ['Your business is on the right track. A free review can still uncover opportunities you can\'t see yet.', 'There are a few leaks, and they can be fixed quickly.', 'Your business is losing customers and hours every week on several fronts.', 'Almost everything depends on you and your memory. A system would give you back time and control from the first month.'],
+    diag: 'Connected Presence', diagThen: ', starting with a free review of your online presence',
     title: 'Get your report by email', lead: 'Your three main leaks and what to do about each one, written for your type of business. It arrives in your inbox in a few minutes.',
     nombre: 'Your name', negocio: 'Business name', giro: 'Type of business', correo: 'Email', wa: 'WhatsApp (optional)',
     giros: [['turismo', 'Tourism, lodging or experiences'], ['restaurante', 'Restaurant or café'], ['salud', 'Health, wellness or beauty'], ['comercio', 'Retail or shop'], ['servicios', 'Professional services'], ['otro', 'Other']],
@@ -24,8 +24,8 @@
     need: 'Please fill in your name, business, type of business and email, and accept the privacy notice.'
   } : {
     names: { presencia: 'Sitios web y canales conectados', auto: 'Automatización de tareas', datos: 'Bases de datos y reportes automáticos', mkt: 'Marketing digital medible', diseno: 'Diseño de marca y redes' },
-    msg: ['Su negocio va bien encaminado. Aun así, un diagnóstico puede encontrar oportunidades que hoy no se ven.', 'Hay algunas fugas, y se pueden cerrar rápido.', 'Su negocio está perdiendo clientes y horas cada semana en varios frentes.', 'Casi todo depende de usted y de su memoria. Un sistema le devolvería tiempo y control desde el primer mes.'],
-    diag: 'Diagnóstico de Datos en 7 Días', diagThen: ', empezando por el Diagnóstico de Datos en 7 Días',
+    msg: ['Su negocio va bien encaminado. Aun así, una revisión gratis puede encontrar oportunidades que hoy no se ven.', 'Hay algunas fugas, y se pueden cerrar rápido.', 'Su negocio está perdiendo clientes y horas cada semana en varios frentes.', 'Casi todo depende de usted y de su memoria. Un sistema le devolvería tiempo y control desde el primer mes.'],
+    diag: 'Presencia Conectada', diagThen: ', empezando por una revisión gratis de su presencia en línea',
     title: 'Reciba su reporte por correo', lead: 'Sus 3 fugas principales y qué hacer con cada una, escrito para su tipo de negocio. Le llega a su correo en unos minutos.',
     nombre: 'Su nombre', negocio: 'Nombre del negocio', giro: 'Giro', correo: 'Correo', wa: 'WhatsApp (opcional)',
     giros: [['turismo', 'Turismo, hospedaje o experiencias'], ['restaurante', 'Restaurante o café'], ['salud', 'Salud, bienestar o belleza'], ['comercio', 'Comercio o tienda'], ['servicios', 'Servicios profesionales'], ['otro', 'Otro']],
