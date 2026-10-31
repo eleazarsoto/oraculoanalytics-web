@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://oraculoanalytics.com/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oraculoanalytics.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oraculoanalytics.com/en/"/>
+  </url>
+  <url>
+    <loc>https://oraculoanalytics.com/en/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oraculoanalytics.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oraculoanalytics.com/en/"/>
+  </url>
+  <url>
+    <loc>https://oraculoanalytics.com/ribera/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oraculoanalytics.com/ribera/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oraculoanalytics.com/en/lake-chapala/"/>
+  </url>
+  <url>
+    <loc>https://oraculoanalytics.com/en/lake-chapala/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oraculoanalytics.com/ribera/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oraculoanalytics.com/en/lake-chapala/"/>
+  </url>
+  <url>
+    <loc>https://oraculoanalytics.com/aviso-de-privacidad/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oraculoanalytics.com/aviso-de-privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oraculoanalytics.com/en/privacy/"/>
+  </url>
+  <url>
+    <loc>https://oraculoanalytics.com/en/privacy/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oraculoanalytics.com/aviso-de-privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oraculoanalytics.com/en/privacy/"/>
+  </url>
+  <url><loc>https://oraculoanalytics.com/tablero/</loc></url>
+  <url>
+    <loc>https://oraculoanalytics.com/belleza-y-spa/</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://oraculoanalytics.com/hoteles-boutique/</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://oraculoanalytics.com/restaurantes/</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://oraculoanalytics.com/bienes-raices/</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+</urlset>
