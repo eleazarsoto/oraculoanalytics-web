@@ -488,14 +488,14 @@ h1,h2,h3,.brand,.sign,.big,.num,blockquote,.turn p{font-family:var(--serif)}
 .offer{background:var(--night)!important;color:#F3EEE3;border:0!important;padding:34px 38px!important}
 .offer h3{color:#F3EEE3}.offer p{color:rgba(243,238,227,.72)}
 /* problema en oscuro, como testimonios */
-#problema,#problem{background:linear-gradient(180deg,var(--night) 0%,var(--night-2) 100%)!important;color:#F3EEE3}
-#problema h2,#problem h2{color:#F3EEE3}#problema .label,#problem .label{color:var(--gold)}
-#problema .pains li,#problem .pains li{background:rgba(220,232,228,.04)!important;border:1px solid var(--hair)!important;color:rgba(243,238,227,.86)!important;padding:30px 30px 26px!important;font:400 21px/1.45 var(--serif)!important;font-style:italic!important;position:relative}
-#problema .pains li::before,#problem .pains li::before{content:"\201C";display:block;font:400 64px/0.6 var(--serif);color:var(--gold);margin-bottom:10px;font-style:normal}
-#problema .pains,#problem .pains{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:16px!important}
-@media (max-width:900px){#problema .pains,#problem .pains{grid-template-columns:1fr!important}}
-#problema .turn p,#problem .turn p{font-size:clamp(26px,3vw,38px)!important;line-height:1.2;color:#F3EEE3}
-#problema .turn em,#problem .turn em{color:var(--gold)}
+#problema:has(.pains),#problem:has(.pains){background:linear-gradient(180deg,var(--night) 0%,var(--night-2) 100%)!important;color:#F3EEE3}
+#problema:has(.pains) h2,#problem:has(.pains) h2{color:#F3EEE3}#problema:has(.pains) .label,#problem:has(.pains) .label{color:var(--gold)}
+#problema:has(.pains) .pains li,#problem:has(.pains) .pains li{background:rgba(220,232,228,.04)!important;border:1px solid var(--hair)!important;color:rgba(243,238,227,.86)!important;padding:30px 30px 26px!important;font:400 21px/1.45 var(--serif)!important;font-style:italic!important;position:relative}
+#problema:has(.pains) .pains li::before,#problem:has(.pains) .pains li::before{content:"\201C";display:block;font:400 64px/0.6 var(--serif);color:var(--gold);margin-bottom:10px;font-style:normal}
+#problema:has(.pains) .pains,#problem:has(.pains) .pains{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:16px!important}
+@media (max-width:900px){#problema:has(.pains) .pains,#problem:has(.pains) .pains{grid-template-columns:1fr!important}}
+#problema:has(.pains) .turn p,#problem:has(.pains) .turn p{font-size:clamp(26px,3vw,38px)!important;line-height:1.2;color:#F3EEE3}
+#problema:has(.pains) .turn em,#problem:has(.pains) .turn em{color:var(--gold)}
 /* autodiagnóstico */
 .chk{gap:14px!important}
 .chk label{background:var(--card)!important;border:1px solid var(--line)!important;box-shadow:var(--shadow);padding:22px 24px!important;font-size:16px!important;transition:border-color .2s,background .2s,transform .2s!important}
@@ -544,6 +544,10 @@ body .lp-steps li{background:var(--card);border:1px solid var(--line);border-top
 body .ia-proof li{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:22px 22px!important;border-top:1px solid var(--line)!important}
 #agentes .ia-proof li,#agents .ia-proof li{background:rgba(220,232,228,.04)!important;border:1px solid var(--hair)!important;box-shadow:none}
 #marketing .ia-card,#sitios .ia-card,#websites .ia-card,#ejemplos .ia-card{background:var(--card)!important;box-shadow:var(--shadow)}
+/* fondos animados por sección */
+canvas.bgfx{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 12%,#000 88%,transparent 100%);mask-image:linear-gradient(180deg,transparent 0,#000 12%,#000 88%,transparent 100%)}
+.has-bgfx{position:relative;overflow:hidden}
+.has-bgfx>.wrap{position:relative;z-index:1}
 /* pie de página */
 footer.pro{background:var(--night)!important;color:rgba(243,238,227,.7)!important;text-align:left!important;padding:96px 0 120px!important;font:400 15px/1.7 var(--sans)!important}
 footer.pro .ft-top{display:grid;grid-template-columns:minmax(0,1.3fr) repeat(4,minmax(0,1fr));gap:40px}
@@ -763,5 +767,6 @@ var steps=[[600,function(){msgs[0].classList.add('on');ev[0].classList.add('on')
 var i=0;function run(){var s=steps[i];setTimeout(function(){s[1]();i=(i+1)%steps.length;run()},s[0])}
 log.appendChild(ty);run();})();
 </script>
+<script src="/assets/oraculo-bg.js?v=2" defer></script>
 </body>
 </html>
