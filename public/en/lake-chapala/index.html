@@ -353,6 +353,27 @@ body .lp-hero .lp-eyebrow{display:inline-flex;border:1px solid rgba(206,154,69,.
 body .lp-end{background:radial-gradient(60% 80% at 85% 20%,rgba(206,154,69,.14),transparent 60%),var(--night);padding:120px 0}
 body .lp-end h2{font-size:clamp(36px,4.6vw,56px)}
 body .lp-card,body .ia-card{border-radius:18px}
+/* páginas internas con visual */
+body .lp-hero .wrap.has-v{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px;align-items:center}
+@media (max-width:980px){body .lp-hero .wrap.has-v{grid-template-columns:1fr}}
+#sistema,#que-construyo,#what-i-build{background:linear-gradient(180deg,var(--night-2) 0%,var(--night) 100%);color:#F3EEE3;border-bottom:0}
+#sistema h2,#que-construyo h2,#what-i-build h2{color:#F3EEE3}
+#sistema .sub,#que-construyo .sub,#what-i-build .sub{color:rgba(243,238,227,.72)}
+#sistema .label,#que-construyo .label,#what-i-build .label{color:var(--gold)}
+#sistema .lp-sys li{background:rgba(220,232,228,.04);border:1px solid var(--hair);border-radius:18px;color:rgba(243,238,227,.68);transition:border-color .3s,transform .3s}
+#sistema .lp-sys li:hover{border-color:rgba(206,154,69,.45);transform:translateY(-3px)}
+#sistema .lp-sys b{color:#F3EEE3}
+#que-construyo .ia-card,#what-i-build .ia-card{background:rgba(220,232,228,.04);border:1px solid var(--hair);border-radius:18px;transition:border-color .3s,transform .3s}
+#que-construyo .ia-card:hover,#what-i-build .ia-card:hover{border-color:rgba(206,154,69,.45);transform:translateY(-3px)}
+#que-construyo .ia-card h3,#what-i-build .ia-card h3{color:#F3EEE3}
+#que-construyo .ia-card p,#what-i-build .ia-card p,#que-construyo .ia-card ul,#what-i-build .ia-card ul{color:rgba(243,238,227,.68)}
+#que-construyo .ia-card .k,#what-i-build .ia-card .k{color:var(--gold)}
+#que-construyo .ia-card .for,#what-i-build .ia-card .for{color:#8FC1BA}
+body .lp-cards .lp-card{transition:transform .3s,box-shadow .3s}
+body .lp-cards .lp-card:hover{transform:translateY(-3px);box-shadow:0 24px 60px rgba(18,52,52,.1)}
+body .lp-calc{border-radius:18px}
+body .lp-steps li{border-top-width:3px}
+body .faq summary{font-size:22px}
 /* consola del agente */
 .hero-visual{background:none!important;border:0!important;padding:0!important;box-shadow:none!important}
 .hero-visual::before,.hero-visual::after{display:none!important}
@@ -435,6 +456,108 @@ body .lp-card,body .ia-card{border-radius:18px}
 /* cierre */
 .cta h2{font-size:clamp(38px,5vw,64px);letter-spacing:-.03em}
 .cta{background:radial-gradient(60% 80% at 85% 20%,rgba(206,154,69,.14),transparent 60%),var(--night)!important;padding:140px 0}
+
+/* ===== acabado pro ===== */
+:root{--paper2:#FBF8F1;--card:#FFFFFF;--shadow:0 1px 2px rgba(18,52,52,.04),0 8px 24px rgba(18,52,52,.06);--shadow-h:0 2px 4px rgba(18,52,52,.05),0 24px 60px rgba(18,52,52,.12)}
+body{font-family:var(--sans)!important}
+h1,h2,h3,.brand,.sign,.big,.num,blockquote,.turn p{font-family:var(--serif)}
+.section{border-bottom:0!important}
+/* ritmo de fondos */
+#marketing,#sectores,#hallazgo,#servicios,#sobre-mi,#preguntas,#about,#faq,#services,#finding{background:var(--parchment)}
+#sitios,#websites,#ecosistema,#ecosystem,#autodiagnostico,#self-check,#como-trabajo,#how-i-work,#casos,#cases{background:var(--paper2)}
+/* encabezados de sección */
+.section .label{margin-bottom:20px}
+.section h2{margin-bottom:22px}
+.section .sub{font-size:18.5px;line-height:1.6}
+/* tarjetas universales */
+.svc,.layer,.step,.case,.lp-card,.ia-card,.chk label,.pains li,.chart,.offer,.lp-why li{border-radius:20px!important}
+.services{gap:16px!important;background:transparent!important;border:0!important;counter-reset:svc}
+.svc{counter-increment:svc;background:var(--card)!important;border:1px solid var(--line);box-shadow:var(--shadow);padding:36px 34px!important;position:relative;transition:transform .3s,box-shadow .3s!important}
+.svc::after{content:"0" counter(svc);position:absolute;top:30px;right:32px;font:500 13px var(--sans);color:var(--ink-soft);letter-spacing:.08em}
+.svc:hover{transform:translateY(-4px);box-shadow:var(--shadow-h)}
+.svc .ico{width:52px!important;height:52px!important;padding:12px;border-radius:14px;background:var(--teal-pale);color:var(--teal-deep);margin-bottom:18px}
+.svc h3{font-size:24px!important;line-height:1.2}
+.layers{gap:16px!important;background:transparent!important;border:0!important}
+.layer{background:var(--card);border:1px solid var(--line)!important;box-shadow:var(--shadow);padding:36px 32px!important}
+.layer .ico{width:52px;height:52px;padding:12px;border-radius:14px;background:var(--teal-pale);color:var(--teal-deep)}
+.layer h3{font-size:24px}
+.steps{gap:16px!important;background:transparent!important;border:0!important}
+.step{background:var(--card);border:1px solid var(--line)!important;border-top:3px solid var(--gold)!important;box-shadow:var(--shadow);padding:32px 26px!important}
+.step .n{font:400 44px/1 var(--serif)!important;color:var(--gold)!important;margin-bottom:14px}
+.step h3{font-size:22px}
+.offer{background:var(--night)!important;color:#F3EEE3;border:0!important;padding:34px 38px!important}
+.offer h3{color:#F3EEE3}.offer p{color:rgba(243,238,227,.72)}
+/* problema en oscuro, como testimonios */
+#problema,#problem{background:linear-gradient(180deg,var(--night) 0%,var(--night-2) 100%)!important;color:#F3EEE3}
+#problema h2,#problem h2{color:#F3EEE3}#problema .label,#problem .label{color:var(--gold)}
+#problema .pains li,#problem .pains li{background:rgba(220,232,228,.04)!important;border:1px solid var(--hair)!important;color:rgba(243,238,227,.86)!important;padding:30px 30px 26px!important;font:400 21px/1.45 var(--serif)!important;font-style:italic!important;position:relative}
+#problema .pains li::before,#problem .pains li::before{content:"\201C";display:block;font:400 64px/0.6 var(--serif);color:var(--gold);margin-bottom:10px;font-style:normal}
+#problema .pains,#problem .pains{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:16px!important}
+@media (max-width:900px){#problema .pains,#problem .pains{grid-template-columns:1fr!important}}
+#problema .turn p,#problem .turn p{font-size:clamp(26px,3vw,38px)!important;line-height:1.2;color:#F3EEE3}
+#problema .turn em,#problem .turn em{color:var(--gold)}
+/* autodiagnóstico */
+.chk{gap:14px!important}
+.chk label{background:var(--card)!important;border:1px solid var(--line)!important;box-shadow:var(--shadow);padding:22px 24px!important;font-size:16px!important;transition:border-color .2s,background .2s,transform .2s!important}
+.chk label:hover{transform:translateY(-2px);border-color:var(--teal-soft)!important}
+.chk input{appearance:none;-webkit-appearance:none;flex:none;width:24px;height:24px;border-radius:50%;border:2px solid #C9BFAC;margin:0;display:grid;place-items:center;transition:all .2s;cursor:pointer}
+.chk input:checked{background:var(--teal-deep);border-color:var(--teal-deep)}
+.chk input:checked::after{content:"";width:10px;height:5px;border:2px solid #fff;border-top:0;border-right:0;transform:rotate(-45deg) translate(1px,-1px)}
+.chk label:has(input:checked){background:var(--teal-pale)!important;border-color:var(--teal-mid)!important}
+.chk-out{border-radius:22px;padding:36px 40px!important;background:radial-gradient(60% 80% at 90% 10%,rgba(206,154,69,.16),transparent 60%),var(--night)!important}
+/* hallazgo y casos */
+.chart{box-shadow:var(--shadow);border:1px solid var(--line)}
+.case{background:var(--card)!important;border:1px solid var(--line)!important;box-shadow:var(--shadow);overflow:hidden;transition:transform .3s,box-shadow .3s!important}
+.case:hover{transform:translateY(-4px);box-shadow:var(--shadow-h)}
+.case .cover-wrap{border-radius:14px;overflow:hidden}
+/* sobre mí */
+.about{grid-template-columns:380px minmax(0,1fr)!important;gap:72px!important;margin-top:40px!important}
+@media (max-width:900px){.about{grid-template-columns:1fr!important;gap:36px!important}.mono{position:static!important;width:100%!important;max-width:360px}}
+.mono{border-radius:28px!important;aspect-ratio:4/5!important;overflow:hidden;box-shadow:0 30px 80px rgba(18,52,52,.25)!important;position:sticky;top:110px}
+.mono img{width:100%!important;height:100%!important;object-fit:cover;border-radius:0!important;border:0!important}
+.mono svg{display:none}
+.about-txt p{font:400 17.5px/1.7 var(--sans)!important;color:#3D403B}
+.about-txt p.first{font-size:21px!important;line-height:1.55!important;color:var(--ink)}
+.first::first-letter{float:none!important;font-size:inherit!important;padding:0!important;color:inherit!important}
+.facts{border:0!important;gap:12px!important;margin:34px 0 30px!important}
+.facts div{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 20px!important;box-shadow:var(--shadow)}
+.facts b{font-family:var(--serif);color:var(--gold)!important}
+.tools li{border-radius:999px!important;border-left:1px solid var(--line)!important;background:var(--card)!important;padding:8px 14px!important}
+.ins li{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;list-style:none;margin-bottom:10px}
+.ins{padding:0}
+/* preguntas en dos columnas */
+#preguntas .wrap,#faq .wrap{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);column-gap:72px;align-items:start}
+#preguntas .label,#faq .label{grid-column:1;grid-row:1}
+#preguntas h2,#faq h2{grid-column:1;grid-row:2;position:sticky;top:120px}
+#preguntas .faq,#faq .faq{grid-column:2;grid-row:1/span 3;margin-top:0!important;border-top:0!important}
+@media (max-width:900px){#preguntas .wrap,#faq .wrap{display:block}}
+.faq details{background:var(--card);border:1px solid var(--line)!important;border-radius:18px;margin-bottom:12px;padding:0 26px;box-shadow:var(--shadow);transition:box-shadow .2s}
+.faq details[open]{box-shadow:var(--shadow-h)}
+.faq summary{font-family:var(--serif);padding:24px 44px 24px 0!important}
+/* páginas internas */
+body .lp-card{background:var(--card)!important;border:1px solid var(--line)!important;box-shadow:var(--shadow);padding:32px 30px!important}
+body .lp-why{gap:14px!important}
+body .lp-why li{background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow);padding:22px 24px 22px 24px!important}
+body .lp-why li::before{display:none}
+body .lp-steps{gap:16px!important}
+body .lp-steps li{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--gold)!important;border-radius:20px;box-shadow:var(--shadow);padding:26px 24px!important}
+body .ia-proof li{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:22px 22px!important;border-top:1px solid var(--line)!important}
+#agentes .ia-proof li,#agents .ia-proof li{background:rgba(220,232,228,.04)!important;border:1px solid var(--hair)!important;box-shadow:none}
+#marketing .ia-card,#sitios .ia-card,#websites .ia-card,#ejemplos .ia-card{background:var(--card)!important;box-shadow:var(--shadow)}
+/* pie de página */
+footer.pro{background:var(--night)!important;color:rgba(243,238,227,.7)!important;text-align:left!important;padding:96px 0 120px!important;font:400 15px/1.7 var(--sans)!important}
+footer.pro .ft-top{display:grid;grid-template-columns:minmax(0,1.3fr) repeat(4,minmax(0,1fr));gap:40px}
+footer.pro .ft-brand b{display:block;font:500 26px var(--serif);color:#F3EEE3;margin-bottom:12px}
+footer.pro .ft-brand b span{color:var(--gold)}
+footer.pro .ft-brand p{max-width:300px;margin:0 0 22px}
+footer.pro h4{font:600 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:6px 0 16px}
+footer.pro ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+footer.pro a{color:rgba(243,238,227,.78);text-decoration:none}
+footer.pro a:hover{color:#fff}
+footer.pro .ft-cta{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:var(--night)!important;font-weight:600;border-radius:999px;padding:13px 22px}
+footer.pro .ft-bot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:64px;padding-top:26px;border-top:1px solid var(--hair);font-size:13.5px;color:rgba(243,238,227,.5)}
+@media (max-width:980px){footer.pro .ft-top{grid-template-columns:1fr 1fr}footer.pro .ft-brand{grid-column:1/-1}}
+
 @media (prefers-reduced-motion:reduce){.msg,.typing,.ev{transition:none}.hub .ln,.hub .core circle.o{animation:none}}
 </style>
 <style>
@@ -490,14 +613,18 @@ body .lp-card,body .ia-card{border-radius:18px}
 
 <main id="main">
 <section class="lp-hero" id="top">
-  <div class="wrap">
+  <div class="wrap has-v"><div>
     <p class="lp-eyebrow">Lake Chapala · Ajijic · Chapala · San Antonio · Jocotepec</p>
     <h1>Your customers are already looking. Let them find <em>you</em>, not a booking platform.</h1>
     <p class="lead">I connect your website, your Google profile, your social media and your WhatsApp, and show you which channel brings customers and what each one costs. In person at Lakeside, in English or Spanish, no tech jargon.</p>
     <div class="btns"><a class="btn btn-gold" href="#self-check">Take the free self-check <span class="arrow" aria-hidden="true">→</span></a><a class="btn-link" href="https://wa.me/523320267301?text=Hi%20Eleazar%2C%20I%20saw%20your%20Lake%20Chapala%20page%20and%20I%27d%20like%20the%20free%20review%20of%20my%20business." target="_blank" rel="noopener">Message me on WhatsApp</a></div>
     <ul class="assure"><li>3 minutes</li><li>Free report to your inbox</li><li>No commitment</li></ul>
+    </div>
+    <div class="hero-visual"><div class="agent" aria-label="Example conversation with an AI agent"><div class="ag-top"><span class="ag-av" aria-hidden="true"><i style="height:7px"></i><i style="height:11px"></i><i style="height:15px"></i></span><div><b>Oráculo agent</b><small>Online · replies in seconds</small></div><span class="ag-ch">WhatsApp</span></div><div class="ag-log"><div class="msg c">Hi! Do you have a room for this Friday and Saturday?</div><div class="msg a"><em>AI agent</em>Hi! Yes, we have a garden room for both nights. Would you like me to hold it for you?</div><div class="msg c">Yes, please. Is breakfast included?</div><div class="msg a"><em>AI agent</em>Breakfast is included, 8 to 11 am. Your room is on hold. I'll send the booking link now.</div><div class="typing" aria-hidden="true"><i></i><i></i><i></i></div></div><div class="ag-ev"><div class="ev"><b>Contact</b>Saved to your database</div><div class="ev"><b>Booking</b>Room on hold, Fri–Sat</div><div class="ev"><b>Follow-up</b>Reminder scheduled</div></div></div></div>
   </div>
 </section>
+
+<section class="proofband" aria-label="Numbers"><div class="wrap"><div class="pb-stats"><div><b>24/7</b><span>Your AI agent answers at any hour, in English or Spanish</span></div><div><b>5</b><span>AI and automation systems running today at Oráculo</span></div><div><b>20 min</b><span>Free review to find what to automate first</span></div><div><b>2014</b><span>Working at Lakeside, in person, since</span></div></div><div class="pb-tools"><small>Connects with what you already use</small><span>WhatsApp Business</span><span>Google</span><span>Gmail</span><span>Google Sheets</span><span>Facebook</span><span>Instagram</span><span>Claude</span><span>n8n</span><span>Zoho</span></div></div></section>
 
 <section class="section" id="who">
   <div class="wrap">
@@ -557,12 +684,10 @@ body .lp-card,body .ia-card{border-radius:18px}
 </section>
 </main>
 
-<footer>
+<footer class="pro">
   <div class="wrap">
-    <div class="mark" aria-hidden="true"><svg viewBox="0 0 142 20" width="142" height="20"><rect x="0" y="15.5" width="3.5" height="4.5" fill="#CE9A45" fill-opacity="0.25"/><rect x="6" y="9.4" width="3.5" height="10.6" fill="#CE9A45" fill-opacity="0.28"/><rect x="12" y="10.6" width="3.5" height="9.4" fill="#CE9A45" fill-opacity="0.30"/><rect x="18" y="10.0" width="3.5" height="10.0" fill="#CE9A45" fill-opacity="0.33"/><rect x="24" y="13.3" width="3.5" height="6.7" fill="#CE9A45" fill-opacity="0.35"/><rect x="30" y="12.9" width="3.5" height="7.1" fill="#CE9A45" fill-opacity="0.38"/><rect x="36" y="4.4" width="3.5" height="15.6" fill="#CE9A45" fill-opacity="0.40"/><rect x="42" y="12.8" width="3.5" height="7.2" fill="#CE9A45" fill-opacity="0.43"/><rect x="48" y="13.0" width="3.5" height="7.0" fill="#CE9A45" fill-opacity="0.45"/><rect x="54" y="9.2" width="3.5" height="10.8" fill="#CE9A45" fill-opacity="0.47"/><rect x="60" y="6.9" width="3.5" height="13.1" fill="#CE9A45" fill-opacity="0.50"/><rect x="66" y="12.0" width="3.5" height="8.0" fill="#CE9A45" fill-opacity="0.53"/><rect x="72" y="8.9" width="3.5" height="11.1" fill="#CE9A45" fill-opacity="0.55"/><rect x="78" y="6.6" width="3.5" height="13.4" fill="#CE9A45" fill-opacity="0.57"/><rect x="84" y="9.3" width="3.5" height="10.7" fill="#CE9A45" fill-opacity="0.60"/><rect x="90" y="8.6" width="3.5" height="11.4" fill="#CE9A45" fill-opacity="0.62"/><rect x="96" y="3.7" width="3.5" height="16.3" fill="#CE9A45" fill-opacity="0.65"/><rect x="102" y="2.5" width="3.5" height="17.5" fill="#CE9A45" fill-opacity="0.68"/><rect x="108" y="2.0" width="3.5" height="18.0" fill="#CE9A45" fill-opacity="0.70"/><rect x="114" y="8.2" width="3.5" height="11.8" fill="#CE9A45" fill-opacity="0.73"/><rect x="120" y="8.1" width="3.5" height="11.9" fill="#CE9A45" fill-opacity="0.75"/><rect x="126" y="7.0" width="3.5" height="13.0" fill="#CE9A45" fill-opacity="0.78"/><rect x="132" y="8.0" width="3.5" height="12.0" fill="#CE9A45" fill-opacity="0.80"/><rect x="138" y="2.0" width="3.5" height="18.0" fill="#CE9A45" fill-opacity="0.83"/></svg></div>
-    <nav aria-label="Footer"><a href="/en/#services">Services</a><a href="/en/#how-i-work">How I work</a><a href="/en/#about">About</a><a href="/en/#faq">FAQ</a><a href="/en/#contact">Contact</a></nav>
-    <div>Oráculo Analytics · Data analytics and measurable digital marketing · Ajijic, Jalisco · <a href="mailto:eleazarsoto.data@gmail.com">eleazarsoto.data@gmail.com</a> · <a href="https://wa.me/523320267301" target="_blank" rel="noopener">WhatsApp 33 2026 7301</a> · <a href="/en/privacy/">Privacy notice</a></div>
-    <!-- Add social media and Google Business profile links here -->
+    <div class="ft-top"><div class="ft-brand"><b>Oráculo <span>Analytics</span></b><p>AI agents, digital marketing, websites and data analytics for businesses at Lakeside, in Guadalajara, and online.</p><a class="ft-cta" href="/en/#contact">Book a free review →</a></div><div><h4>Services</h4><ul><li><a href="/en/#agents">AI & software</a></li><li><a href="/en/#marketing">Digital marketing</a></li><li><a href="/en/#websites">Websites</a></li><li><a href="/en/#ecosystem">Data analytics</a></li></ul></div><div><h4>Pages</h4><ul><li><a href="/en/ai-agents/">AI agents</a></li><li><a href="/en/lake-chapala/">Lake Chapala</a></li><li><a href="/en/#cases">Case studies</a></li><li><a href="/en/privacy/">Privacy notice</a></li></ul></div><div><h4>Oráculo</h4><ul><li><a href="/en/#about">About</a></li><li><a href="/en/#how-i-work">How I work</a></li><li><a href="/en/#faq">FAQ</a></li><li><a href="/">Español</a></li></ul></div><div><h4>Contact</h4><ul><li><a href="https://wa.me/523320267301" target="_blank" rel="noopener">WhatsApp +52 33 2026 7301</a></li><li><a href="mailto:eleazarsoto.data@gmail.com">eleazarsoto.data@gmail.com</a></li><li>Ajijic, Lake Chapala, Mexico</li></ul></div></div>
+    <div class="ft-bot"><span>© 2026 Oráculo Analytics · Eleazar Soto</span><span>Your data stays in your accounts. Never shared.</span></div>
   </div>
 </footer>
 
@@ -577,5 +702,23 @@ window.addEventListener('scroll',onScroll,{passive:true});onScroll();
 var q=new URLSearchParams(location.search);['utm_source','utm_medium','utm_campaign'].forEach(function(k){var v=q.get(k);try{if(v){sessionStorage.setItem(k,v);}}catch(e){}});})();
 </script>
 <script src="/assets/oraculo-check.js?v=5" defer></script>
+<script id="agent-js">
+(function(){var box=document.querySelector('.agent');if(!box)return;
+var msgs=[].slice.call(box.querySelectorAll('.msg')),ty=box.querySelector('.typing'),ev=[].slice.call(box.querySelectorAll('.ev'));
+var log=box.querySelector('.ag-log');
+if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){msgs.forEach(function(m){m.classList.add('on')});ev.forEach(function(e){e.classList.add('on')});return;}
+function reset(){msgs.forEach(function(m){m.classList.remove('on')});ev.forEach(function(e){e.classList.remove('on')});ty.classList.remove('on');}
+function place(el){log.insertBefore(ty,el);}
+var steps=[[600,function(){msgs[0].classList.add('on');ev[0].classList.add('on')}],
+[900,function(){place(msgs[1]);ty.classList.add('on')}],
+[1400,function(){ty.classList.remove('on');msgs[1].classList.add('on')}],
+[1600,function(){msgs[2].classList.add('on')}],
+[900,function(){place(msgs[3]);ty.classList.add('on')}],
+[1500,function(){ty.classList.remove('on');msgs[3].classList.add('on');ev[1].classList.add('on')}],
+[900,function(){ev[2].classList.add('on')}],
+[4200,function(){reset()}]];
+var i=0;function run(){var s=steps[i];setTimeout(function(){s[1]();i=(i+1)%steps.length;run()},s[0])}
+log.appendChild(ty);run();})();
+</script>
 </body>
 </html>
