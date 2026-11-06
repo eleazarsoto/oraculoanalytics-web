@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>https://oraculoanalytics.com/en/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://oraculoanalytics.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://oraculoanalytics.com/en/"/>
   </url>
@@ -56,5 +56,13 @@
   <url>
     <loc>https://oraculoanalytics.com/agentes-ia/</loc>
     <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oraculoanalytics.com/agentes-ia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oraculoanalytics.com/en/ai-agents/"/>
+  </url>
+  <url>
+    <loc>https://oraculoanalytics.com/en/ai-agents/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oraculoanalytics.com/agentes-ia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oraculoanalytics.com/en/ai-agents/"/>
   </url>
 </urlset>
