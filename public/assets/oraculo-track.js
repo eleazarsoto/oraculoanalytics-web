@@ -28,7 +28,7 @@
     if (f.id === 'dg-form') {
       var giro = f.querySelector('select');
       meta('MiniDiagnostico', true); track('mini_diagnostico', { idioma: lang, giro: giro ? giro.value : '' });
-    } else if (f.hasAttribute('data-netlify')) {
+    } else if ((f.getAttribute('action') || '').indexOf('/api/contacto') === 0) {
       track('formulario_enviado', { idioma: lang });
     }
   }, true);
